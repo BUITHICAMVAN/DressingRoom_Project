@@ -48,11 +48,13 @@ const fetchAndRenderList = (itemId) => {
 const renderUI = (data) => {
     const contentHTML = data.reduce((content, item) => {
         return (content += `
-        <div class="items-container">            <div class="item">
-        <div class="item-name">${item.name}</div>
-        <img src="${item.imgSrc_jpg}" alt="${item.name}">
-        <p class="item-desc">${item.desc}</p>
-    </div></div>
+        <div class="items-container">            
+            <div class="item">
+                <div class="item-name">${item.name}</div>
+                <img src="${item.imgSrc_jpg}" alt="${item.name}">
+                <p class="item-desc">${item.desc}</p>
+            </div>
+        </div>
         `);
     }, "");
 

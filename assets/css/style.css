@@ -159,25 +159,40 @@ hr {
   padding-top: 30px;
 }
 
-
-.items-container {
+.tab-content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; 
-  gap: 10px; 
+}
+
+.items-container {
+    justify-content: flex-start; /* Align items to the start of the container */
+    gap: 10px; /* Space between items */
+    width: 25%; /* Set the width of each item container to 25% of the parent container */
 }
 
 .item {
-  flex: 0 1 auto; 
-  margin: 5px; 
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Example shadow for styling */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px; /* Rounded corners */
 }
 
-.item-name, .item-desc {
-  margin: 5px 0; 
+.item-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .item img {
-  max-width: 100px; 
-  height: auto; 
-  display: block; 
+    width: 100%; /* Make image responsive to the container's width */
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
 }
+
+.item-desc {
+    font-size: 1em;
+    color: #666;
+}
+
