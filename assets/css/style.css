@@ -158,3 +158,26 @@ hr {
   border: none;
   padding-top: 30px;
 }
+
+
+.items-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.item {
+  flex: 0 1 auto; 
+  margin: 5px; 
+}
+
+.item-name, .item-desc {
+  margin: 5px 0; 
+}
+
+.item img {
+  max-width: 100px; 
+  height: auto; 
+  display: block; 
+}
