@@ -164,28 +164,23 @@ hr {
   flex-direction: row;
 }
 
-.items-container {
-    justify-content: flex-start; /* Align items to the start of the container */
-    gap: 10px; /* Space between items */
-    width: 25%; /* Set the width of each item container to 25% of the parent container */
-}
-
 .item {
     margin: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Example shadow for styling */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
     padding: 10px;
     background-color: #fff;
-    border-radius: 4px; /* Rounded corners */
+    border-radius: 4px; 
 }
 
 .item-name {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .item img {
-    width: 100%; /* Make image responsive to the container's width */
+    width: 100%; 
     height: auto;
     display: block;
     margin-bottom: 5px;
@@ -194,5 +189,6 @@ hr {
 .item-desc {
     font-size: 1em;
     color: #666;
+    text-align: center;
 }
 
